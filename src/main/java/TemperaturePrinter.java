@@ -1,8 +1,13 @@
 public class TemperaturePrinter {
 
+    private TemperatureProvider temperatureProvider;
+
+    public TemperaturePrinter(TemperatureProvider temperatureProvider) {
+        this.temperatureProvider = temperatureProvider;
+    }
+
     public void printTemperature(){
-        TemperatureProviderRandom temperatureProvider = new TemperatureProviderRandom();
-        int temp = temperatureProvider.getTemperature(61, 25);
+        int temp = temperatureProvider.getTemperature();
         System.out.println(temp);
     }
 }
