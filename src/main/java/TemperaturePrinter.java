@@ -1,8 +1,8 @@
 public class TemperaturePrinter {
 
     public void printTemperature(){
-        FileTemperatureProvider provider = new FileTemperatureProvider();
-        int temp = provider.getTemperatureFromFile();
+        TemperatureProviderRandom temperatureProvider = new TemperatureProviderRandom();
+        int temp = temperatureProvider.getTemperature(61, 25);
         System.out.println(temp);
     }
 }
