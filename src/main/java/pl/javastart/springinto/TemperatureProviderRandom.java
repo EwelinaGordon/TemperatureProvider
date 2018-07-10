@@ -1,3 +1,5 @@
+package pl.javastart.springinto;
+
 import java.util.Random;
 
 public class TemperatureProviderRandom implements TemperatureProvider {

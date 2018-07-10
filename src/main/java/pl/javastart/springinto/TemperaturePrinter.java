@@ -1,4 +1,11 @@
+package pl.javastart.springinto;
+
+import org.springframework.stereotype.Component;
+
+
+@Component
 public class TemperaturePrinter {
+
 
     private TemperatureProvider temperatureProvider;
 
