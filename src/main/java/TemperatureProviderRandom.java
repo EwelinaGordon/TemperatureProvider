@@ -1,10 +1,10 @@
 import java.util.Random;
 
-public class TemperatureProviderRandom {
+public class TemperatureProviderRandom implements TemperatureProvider {
 
-    public int getTemperature(int number, int diff){
+    public int getTemperature(){
         Random random = new Random();
-        int temp = random.nextInt(number + diff + 1) - diff; //-25 -> 35
+        int temp = random.nextInt(60) - 25; //-25 -> 35
         return temp;
     }
 }
